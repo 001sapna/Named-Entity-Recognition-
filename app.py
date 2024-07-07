@@ -16,7 +16,8 @@ except OSError:
 # Load your NER model
 @st.cache_resource
 def load_ner_model():
-    return load_model('lstm.keras')
+    return load_model('lstm.keras',custom_objects={'custom_activation':custom_activation})
+    
 
 model = load_ner_model()
 
