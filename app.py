@@ -6,7 +6,7 @@ import numpy as np
 import spacy
 from spacy import displacy
 from tensorflow.python.keras import layers
-from tensorflow.python.keras.models import sequential
+from tf.python.keras.models import Sequential
 
 # Load SpaCy model
 try:
